@@ -1,0 +1,43 @@
+{
+  "name": "gulp-linenum",
+  "version": "0.0.1",
+  "description": "A plugin for gulp to replace line number.",
+  "main": "./lib/gulp-linenum.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zswang/gulp-linenum.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "jdists"
+  ],
+  "author": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zswang/gulp-linenum/issues"
+  },
+  "homepage": "https://github.com/zswang/gulp-linenum",
+  "devDependencies": {
+    "istanbul": "0.3.17",
+    "jshint": "2.8.0",
+    "mocha": "2.0.1",
+    "should": "4.1.0"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "linenum": "0.0.14",
+    "through2": "^2.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec",
+    "lint": "jshint src/*.js",
+    "dist": "jdists src/gulp-linenum.js -o lib/gulp-linenum.js && npm run test"
+  },
+  "files": [
+    "lib"
+  ]
+}
