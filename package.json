@@ -1,6 +1,6 @@
 {
   "name": "gulp-linenum",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for gulp to replace line number.",
   "main": "./lib/gulp-linenum.js",
   "repository": {
@@ -10,7 +10,7 @@
   "keywords": [
     "gulp",
     "plugin",
-    "jdists"
+    "linenum"
   ],
   "author": {
     "name": "zswang",
